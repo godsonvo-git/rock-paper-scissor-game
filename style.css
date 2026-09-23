@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #D9F9DF;
+    color: #111;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+header{
+    background-color: #9FA1FF;
+    color: #111111;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 26px;
+    font-weight: 300;
+    margin: 20px 0 20px 30px;
+    cursor: pointer;
+}
+.pulse{
+    animation: pulse-glow 2s infinite;
+}
+
+.links ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 40px 20px 0;
+}
+
+li a{
+    text-decoration: none;
+    color: #111111;
+
+}
+
+
+/* =========================
+   GAME SECTION
+   ========================= */
+
+.game{
+    background-color:  #AEE2FF;
+    color: #111111;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 50px;
+    margin: 80px 0px 25px 0px;
+}
+.game-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.game-buttons button{
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+    border: 1px solid #D9F9DF;
+    border-radius: 50%;
+    background-color: #9FA1FF;
+    cursor: pointer;
+}
+.game-buttons button:hover{
+    background-color: #8e90fd;
+}
+.game-buttons button:active{
+    animation: pulse-glow 0.4s;
+}
+
+ @keyframes pulse-glow {
+      0% {
+        box-shadow: 0 0 0 0 #8082fe;
+      }
+      70% {
+        /* Pushes a soft, semi-transparent glow outwards */
+        box-shadow: 0 0 0 20px rgba(247, 245, 245, 0);
+      }
+      100% {
+        /* Collapses back to zero opacity to loop seamlessly */
+        box-shadow: 0 0 0 0 rgba(251, 249, 250, 0);
+      }
+    }
+.status-title{
+    margin: 20px 0px 0px 0px;
+    font-size: 25px;
+}
+.choice{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 10px;
+}
+.status{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#resetBtn{
+    margin: 10px 0px 0px 0px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF0033;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+#resetBtn:hover{
+    background-color: #ff355d;
+}
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about-project{
+    background-color: #D9F9DF;
+    color: #111111;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* =========================
+   CONTACT SECTION
+   ========================= */
+
+.contact-us{
+    background-color: #B5BAFF;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+    background-color: #9FA1FF;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
